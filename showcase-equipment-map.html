@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Showcase || Tender Wise</title>
+    <title>Equipment Map || Tender Wise</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
@@ -17,7 +17,8 @@
 
 </head>
 
-<body>
+<body class="position-relative">
+
 
 
     <!-- header section start from here  -->
@@ -88,80 +89,69 @@
     <div class="container">
         <div class="row g-3 justify-content-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <h1 class="fw-bold fs-50 my-5">For general inquiries fill out the feedback form</h1>
+                <div class="d-flex justify-content-between">
+                    <h1 class="fw-bold my-3">Equipment</h1>
+                    <a href="file.doc" class="d-flex align-items-center text-decoration-none text-dark fs-12">
+                        Upload to Excel
+                        <span class="fs-5 ms-3 text-red"><i class="fas fa-file-alt"></i></span>
+                    </a>
+                </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-10">
-                <div class="mb-5">
-                    <div class="row g-2 justify-content-between">
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Your full name</label>
-                            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <a href="showcase-equipment-list.html" class="btn btn-light rounded-pill fs-14 px-4 py-1 border me-1">list</a>
+                            <a href="showcase-equipment-map.html" class="btn btn-red rounded-pill fs-14 px-2 py-1 border me-1">on the cards</a>
                         </div>
-                        <div class="col-6">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Your e-mail</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Your phone number</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">Your question</label>
-                                <div id="emailHelp" class="form-text fs-12">No more than 500 characters. Other details can be found out by phone</div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex pt-3 px-3 border-dotted rounded mb-4">
-                                <div class="">
-                                    <span class="text-red me-4 fs-4">
-                                        <i class="fas fa-paperclip"></i>
-                                    </span>
+                        <div>
+                            <form action="#">
+                                <div class="card border-0 p-0 m-0">
+                                    <div class="card-body p-0 m-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                        <option selected>Nizhny Novgorod Region</option>
+                                                        <option value="1">Nizhny Novgorod Region</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Region</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating mb-3">
+                                                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                        <option selected>BOO</option>
+                                                        <option value="1">BOO</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">State</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="">
-                                    <h6 class="mb-0 text-red fw-bold">Drag and drop a file or click here to add an attachment</h6>
-                                    <p class="fs-10">Max 10Mb</p>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-
-                                <input type="file" id="fileInput" aria-describedby="fileInputAddon">
+                            </form>
+                        </div>
+                        <div class="text-center mb-5 border-top pt-3">
+                            <button class="btn btn-lg btn-red fw-bold rounded-pill px-5 py-2 fs-5 text-white">Show options</button>
+                            <div class=" pt-2">
+                                <a href="#" class=" text-decoration-none text-dark-grey fs-14">
+                                    <span class="fs-5 me-2"><i class="fas fa-xmark-circle"></i></span> Reset filters
+                                </a>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-3">
-                            <button class="btn w-100 btn-red rounded-pill text-white fw-bold py-3 w-100">Submit a question</button>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+                        <div class="rounded">
+                            <iframe class="rounded my-md-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.2977335005635!2d73.06543627545217!3d33.623521373321495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9554cf6bf8f1%3A0x8a237df750ecb3fc!2sRepla%20Technologies!5e0!3m2!1sen!2s!4v1689172395765!5m2!1sen!2s"
+                                width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <p class="fs-12 text-muted">
-                            By clicking on the "Submit" button, you
-                            <a href="#" class="text-red text-decoration-none">consent to the processing</a> of your personal data and agree <a href="#" class="text-red text-decoration-none">to the Policy regarding the processing of personal data</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- header---section---end---here ----->
-    <!-- header---section---start---here ----->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class=" rounded">
-                        <iframe class="rounded mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.2977335005635!2d73.06543627545217!3d33.623521373321495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9554cf6bf8f1%3A0x8a237df750ecb3fc!2sRepla%20Technologies!5e0!3m2!1sen!2s!4v1689172395765!5m2!1sen!2s"
-                            width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- header---section---end---here ----->
 
 
 
@@ -233,33 +223,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
-    <script>
-        $(document).ready(function() {
-            $('#showcase_slider').owlCarousel({
-                loop: true,
-                margin: 30,
-                items: 1,
-                dots: true,
-                nav: true,
-                smartSpeed: 350,
-                autoplay: true,
-                autoplayTimeout: 15000,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            })
-
-        });
-    </script>
-
 </body>
+
+
+<a href="#" class="btn btn-light px-4 rounded-pill fw-semibold text-red position-absolute top-btn position-fixed">Top of the page 
+    <span><i class="fas fa-arrow-up fs-12"></i></span>
+</a>
+
 
 </html>
