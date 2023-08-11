@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Search</title>
+</head>
+<body>
+  <h1>Customer Search</h1>
+  <form id="searchForm">
+    <label for="searchTerm">Search Term:</label>
+    <input type="text" id="searchTerm" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="searchResults">
+    <!-- Search results will be displayed here -->
+  </div>
+
+
+  <h1>Press Enter</h1>
+  <input type="text" id="textInput" placeholder="Press Enter">
+  <div id="output"></div>
+
+  <input type="text" id="searchInput" placeholder="Type to search...">
+  <div id="suggestionPopup"></div>
+
+  <script>
+    const customers = [
+  { name: "John Doe", phoneNumber: "1234567890", uccNumber: "UCC123" },
+  { name: "Jane Smith", phoneNumber: "9876543210", uccNumber: "UCC456" },
+  // Add more customer objects here...
+];
+
+function searchCustomers(searchTerm) {
+  searchTerm = searchTerm.toLowerCase();
+  const results = [];
+
+  for (const customer of customers) {
+    if (
+      customer.name.toLowerCase().includes(searchTerm) ||
+      customer.phoneNumber.includes(searchTerm) ||
+      customer.uccNumber.toLowerCase().includes(searchTerm)
+    ) {
+      results.push(customer);
+    }
+  }
+
+  return results;
+}
+
+const searchForm = document.getElementById("searchForm");
+const searchResultsDiv = document.getElementById("searchResults");
+
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const searchTerm = document.getElementById("searchTerm").value;
+
+  const searchResults = searchCustomers(searchTerm);
+  displaySearchResults(searchResults);
+});
+
+function displaySearchResults(results) {
+  searchResultsDiv.innerHTML = "";
+  if (results.length === 0) {
+    searchResultsDiv.innerHTML = "<p>No results found.</p>";
+    return;
+  }
+
+  const resultList = document.createElement("ul");
+  results.forEach((result) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `Name: ${result.name}, Phone Number: ${result.phoneNumber}, UCC Number: ${result.uccNumber}`;
+    resultList.appendChild(listItem);
+  });
+
+  searchResultsDiv.appendChild(resultList);
+}
+
+  </script>
+
+  <script type="text/javascript">
+    const textInput = document.getElementById("textInput");
+const outputDiv = document.getElementById("output");
+
+textInput.addEventListener("keydown", (event) => {
+  // Check if the "Enter" key is pressed (key code 13)
+  if (event.keyCode === 13) {
+    const inputText = textInput.value;
+    // Do something with the input text, e.g., display it in the outputDiv
+    outputDiv.textContent = "You pressed Enter! Input: " + inputText;
+  }
+});
+
+  </script>
+
+  <script type="text/javascript">
+    const searchInput = document.getElementById("searchInput");
+const suggestionPopup = document.getElementById("suggestionPopup");
+
+const data = [
+  "apple", "banana", "orange", "grape", "watermelon", "mango",
+  "carrot", "broccoli", "tomato", "potato", "cabbage", "spinach"
+  // Add more data here...
+];
+
+// Function to display suggestions based on the entered text
+function showSuggestions(inputText) {
+  const matchedSuggestions = data.filter(item => item.toLowerCase().includes(inputText.toLowerCase()));
+  const suggestionList = matchedSuggestions.map(item => `<div>${item}</div>`).join('');
+  suggestionPopup.innerHTML = suggestionList;
+}
+
+searchInput.addEventListener("input", () => {
+  const inputText = searchInput.value.trim();
+  if (inputText === "") {
+    suggestionPopup.innerHTML = ""; // Clear the suggestion popup if input is empty
+  } else {
+    showSuggestions(inputText); // Show suggestions based on the entered text
+  }
+});
+
+// Handle click outside the suggestion popup to close it
+document.addEventListener("click", (event) => {
+  if (!suggestionPopup.contains(event.target)) {
+    suggestionPopup.innerHTML = "";
+  }
+});
+
+  </script>
+
+</body>
+</html>

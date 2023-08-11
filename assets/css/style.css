@@ -10,6 +10,10 @@
     --dark-grey: #718c9e;
     --light-grey: #95acbc;
     --color-red: #c70b0b;
+    --gray-color: #5D5D5D;
+    --white: #fff;
+    --red-light: rgba(199, 11, 11, .7);
+    --gray-bg: #f5f5f5;
 }
 
 .fs-10 {
@@ -71,6 +75,14 @@
 
 .bg-grey {
     background-color: #f2f2f2 !important;
+}
+
+.bg-gray-new {
+    background-color: var(--gray-bg);
+}
+
+.bg-dark-gray {
+    background-color: var(--dark-grey);
 }
 
 .bg-red {
@@ -153,7 +165,7 @@ p {
 /* hero section css start from here  */
 
 .hero_section {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../image/slider.jpg');
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/slider.jpg');
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -428,6 +440,13 @@ span.img-text:hover {
 }
 
 
+/* ------for-showcase-page-styling------ */
+
+.fliter_custom {
+    display: block;
+}
+
+
 /* -----dilawar-styling-end-from-here----------- */
 
 .partner_img {
@@ -458,12 +477,10 @@ span.img-text:hover {
     position: relative;
 }
 
-
-/* 
 .owl-carousel .owl-nav {
     overflow: hidden;
     height: 0px;
-} */
+}
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
@@ -537,6 +554,442 @@ span.img-text:hover {
 /* home page css end  */
 
 
+/*all services page css start frrom here  */
+
+.services_section {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/slider.jpg');
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 50% 100%, 0 87%);
+}
+
+.filter_btn {
+    border: 1px solid var(--color-red) !important;
+    color: #fff;
+}
+
+.active-filter-btn {
+    background-color: var(--color-red) !important;
+    color: #fff !important;
+}
+
+.collection-list {
+    position: relative;
+    top: -300px;
+}
+
+.all_service_card {
+    border-top: 4px solid var(--color-red) !important;
+}
+
+
+/*all services page css end here  */
+
+
+/* open special account page css start from here  */
+
+.open_spcial_head_section {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/slider.jpg');
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* clip-path: polygon(0 0, 100% 0%, 100% 87%, 50% 100%, 0 87%); */
+}
+
+.shape-hexagon {
+    clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last_sec_img:hover .open_account_img {
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+
+/* open special account page css end here  */
+
+
+/*new css by azeem*/
+
+.width-90 {
+    width: 90%;
+}
+
+.bg-gray-1 {
+    background-color: var(--gray-color);
+}
+
+.muliple ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.ms-options-wrap>.ms-options>ul input[type="checkbox"] {
+    top: 15px !important;
+}
+
+
+/*.form-control{
+	padding: 8px !important;
+}
+*/
+
+.ms-options-wrap:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
+}
+
+.focusinput:hover {
+    border-color: var(--color-red);
+    box-shadow: 0 0 7px var(--color-red);
+}
+
+.listofitem {
+    height: 25em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.listofitem ul li a {
+    padding: 0px 7px;
+    color: var(--gray-color);
+}
+
+.listofitem ul li a:hover {
+    background-color: var(--red-light);
+    color: var(--white);
+}
+
+.showbtn {
+    display: none;
+}
+
+.gap-3 {
+    display: flex;
+    gap: 3px;
+}
+
+.listofitem ul li a:hover .showbtn {
+    display: block;
+}
+
+.text-h {
+    border: 1px dashed transparent;
+}
+
+.listofitem ul li a:hover .text-h {
+    border-color: var(--color-red);
+}
+
+.listofactive ul li a {
+    color: var(--gray-color);
+}
+
+.listofactive ul li a.active {
+    color: var(--white);
+    padding: 4px;
+    border-radius: 5px;
+    background-color: var(--color-red);
+}
+
+.width-drop {
+    width: 30vw;
+}
+
+.tab-list ul li {
+    border: 1px solid #dee2e6;
+    transition: .5s all ease;
+}
+
+.tab-list ul li:hover {
+    border-color: var(--color-red);
+}
+
+.tab-list ul li a {
+    padding: 8px;
+    display: block;
+    color: #000;
+}
+
+.hover-card {
+    background-color: var(--white);
+    transition: .5s all ease;
+}
+
+.hover-card:hover {
+    background-color: #eeeeee;
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: var(--color-red) !important;
+    border-color: var(--color-red) !important;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.pag-c .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: 10px;
+}
+
+
+/* 12/7/2023 css by azeem */
+
+.banner-e-shop {
+    background-image: url('../images/eshop-1.jpg');
+    padding: 115px 0px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btncust {
+    padding: 0 30px;
+    line-height: 19px;
+    font-size: 16px;
+    border-radius: 2px;
+    min-height: 50px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pad-40-0 {
+    padding: 40px 0;
+}
+
+.gap-15 {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.w-40-40 {
+    width: 40px;
+    height: 40px;
+}
+
+.w-80 {
+    width: calc(100% - 10%);
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.focus-none:focus {
+    box-shadow: none !important;
+}
+
+.shadow-1 {
+    box-shadow: 0 3px 0 var(--dark-grey);
+}
+
+.tab-cust .nav-item.show .nav-link,
+.tab-cust .nav-link.active {
+    color: var(--dark-grey) !important;
+}
+
+.tab-cust .nav-link {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+.pill-cust-eshop .nav-link {
+    height: 170px;
+    border: 1px solid var(--light-grey);
+    color: var(--light-grey);
+}
+
+.pill-cust-eshop .nav-link.active,
+.pill-cust-eshop .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--light-grey) !important;
+}
+
+.pill-one .nav-link {
+    color: #000 !important;
+}
+
+.pill-one .nav-link.active,
+.pill-cust-eshop .show>.nav-link {
+    color: var(--color-red) !important;
+    background-color: transparent !important;
+}
+
+.select-c .ms-options-wrap {
+    width: 25%;
+}
+
+.select-c .ms-options-wrap>button {
+    background-color: transparent !important;
+    border-color: var(--light-grey) !important;
+}
+
+.ms-options ul {
+    list-style: none !important;
+    padding-left: 0px;
+}
+
+.height-form {
+    overflow-y: scroll;
+    height: 350px;
+    overflow-x: hidden;
+}
+
+.tble tbody tr td {
+    padding: 5px;
+}
+
+.slect-form .ms-options-wrap button {
+    background-color: transparent !important;
+}
+
+.font-404 {
+    font-size: 20vh;
+    line-height: 146px;
+}
+
+.breadview .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--white) !important;
+}
+
+.pill-view .nav-link {
+    border-bottom: 2px solid transparent;
+    color: #000;
+    transition: .5s all;
+    padding: 10px 5px;
+}
+
+.pill-view .nav-link:hover {
+    background-color: var(--dark-grey);
+    color: #fff;
+}
+
+.pill-view .nav-link.active,
+.pill-view .show>.nav-link {
+    color: var(--color-red) !important;
+    background-color: transparent !important;
+    border-bottom: 2px solid var(--color-red);
+}
+
+.custom-pill .nav-link {
+    color: #000;
+    border: 1px solid var(--red-light);
+}
+
+.custom-pill .nav-link.active,
+.custom-pill .show>.nav-link {
+    background-color: var(--color-red);
+}
+
+.postion-sticky-cs {
+    position: sticky;
+    top: 10px;
+    margin-top: 60px;
+}
+
+.font-mar {
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.pad-115-0 {
+    padding: 115px 0px;
+}
+
+.banner-mar {
+    background-color: #4FA9CB;
+}
+
+.img-bg {
+    width: 95%;
+    background-image: url(../images/after-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 78vh;
+}
+
+.width-sm img {
+    width: 150px;
+}
+
+.w-80 {
+    width: 80px;
+}
+
+.block-pill .nav-link {
+    height: 150px;
+    color: #000;
+}
+
+.block-pill .nav-link.active,
+.block-pill .show>.nav-link {
+    background-color: var(--dark-grey);
+}
+
+.bg-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+}
+
+.iframvideo {
+    width: 100%;
+    height: 560px;
+}
+
+.iframvideo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.penta-img {
+    background-image: url(../images/penta.jpg);
+    padding: 65px 20px 77px;
+    height: 225px;
+    background-position-x: center;
+    background-position-y: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.polygone {
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 50% 100%, 0 87%);
+}
+
+.small-bar {
+    width: 26px;
+    height: 4px;
+    background-color: var(--color-red);
+}
+
+@media (max-width: 1024px) {
+    .btncust {
+        width: 100%;
+    }
+}
+
+
 /* ------Dilawar-styling-start-from-here---- */
 
 .showcase_nav .navbar-nav .nav-item .nav-link {
@@ -546,6 +999,11 @@ span.img-text:hover {
     letter-spacing: 0.3px;
     padding: 5px 15px !important;
     margin-left: 3px !important;
+}
+
+.inner_cards_slider .owl-carousel .owl-nav,
+.showcase_owl_slider .owl-carousel .owl-nav {
+    overflow: visible !important;
 }
 
 .showcase_nav .navbar-nav .nav-item .nav-link:hover,
@@ -603,14 +1061,34 @@ span.img-text:hover {
         font-size: 50px;
         color: var(--color-red);
     }
+    .inner_cards_slider .owl-nav:hover,
+    .inner_cards_slider .owl-nav:focus,
     .showcase_owl_slider .owl-nav:hover,
     .showcase_owl_slider .owl-nav:focus {
         color: #000000 !important;
+    }
+    .inner_cards_slider .owl-dots {
+        position: absolute;
+        top: 85%;
+        left: 7%;
     }
     .showcase_owl_slider .owl-dots {
         position: absolute;
         top: 85%;
         left: 37%;
+    }
+    .inner_cards_slider .owl-nav {
+        position: absolute;
+        font-size: 50px;
+        color: var(--color-red);
+    }
+    .inner_cards_slider .owl-nav .owl-prev span {
+        position: absolute;
+        right: 4rem;
+    }
+    .inner_cards_slider .owl-nav .owl-next span {
+        position: absolute;
+        left: 83rem;
     }
     .showcase_owl_slider .owl-nav .owl-next span {
         position: absolute;
@@ -622,6 +1100,12 @@ span.img-text:hover {
     }
     .fs-50 {
         font-size: 50px;
+    }
+    .border-start-custom {
+        border-left: 1px solid #dcdbdb;
+    }
+    .fliter_custom {
+        display: block;
     }
 }
 
@@ -646,13 +1130,16 @@ span.img-text:hover {
     object-fit: cover;
 }
 
-.showcase_owl_slider .owl-carousel {
-    position: relative;
+.inner_cards_slider .owl-carousel .owl-nav {
+    position: absolute;
+    top: 40%;
 }
 
+.inner_cards_slider .owl-theme .owl-dots .owl-dot.active span,
+.inner_cards_slider .owl-theme .owl-dots .owl-dot.active span,
 .showcase_owl_slider .owl-theme .owl-dots .owl-dot.active span,
 .showcase_owl_slider .owl-theme .owl-dots .owl-dot:hover span {
-    background: var(--color-red);
+    background: var(--color-red) !important;
 }
 
 .bg-light-grey {
@@ -752,4 +1239,403 @@ span.img-text:hover {
 }
 
 
+/* -------Rate-page-styling-start-from-here-------------- */
+
+.rates_nav_custom .nav-item .nav-link.active {
+    border-bottom: 4px solid var(--color-red);
+}
+
+.addition_card {
+    width: 100%;
+    height: 350px;
+}
+
+.rate_accordian_custom .accordion-button::after {
+    background-image: url(../images/chevron-Up.png);
+    width: 50px;
+    background-size: contain;
+    height: 56px;
+}
+
+.rate_accordian_custom .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/chevron-Up.png);
+}
+
+.rep_card_img {
+    height: 310px !important;
+}
+
+.rep_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offcanvas {
+    width: 500px !important;
+}
+
+.offcanvas-body .form-control:focus {
+    border-color: var(--color-red);
+    box-shadow: none;
+}
+
+
+/* -------Rate-page-styling-End-from-here-------------- */
+
+
+/* -------Media-Query-start-from-here-------- */
+
+@media(max-width:576px) {
+    .border-bottom-custom {
+        border-bottom: 1px solid #dcdbdb;
+    }
+    .custom_news_magazine {
+        height: 800px !important;
+    }
+}
+
+
+/* -------Media-Query-end-from-here-------- */
+
+
+/* -------News-styling-start-from-here----- */
+
+.custom_news.active {
+    background: rgb(173, 7, 7);
+}
+
+.news_card_img {
+    width: 100%;
+    height: 130px;
+}
+
+.news_card_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.custom_nav_news a.active {
+    background-color: transparent !important;
+    border-bottom: 5px solid #b50808 !important;
+    border-radius: 0px;
+}
+
+.custom_news_magazine {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('../images/bg-3.jpg');
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+
+/* -------News-styling-end-from-here----- */
+
+
 /* ------Dilawar-styling-END-from-here---- */
+
+
+/* ------------Dilawar-styling-End-from-here------------ */
+
+
+/*azeem css 25/7/2023*/
+
+.pad-24-32 {
+    padding: 24px 32px;
+}
+
+.pad-btm-65 {
+    padding-bottom: 65px;
+}
+
+.btm-block {
+    position: absolute;
+    max-width: 1300px;
+    width: 100%;
+    bottom: -48px;
+    box-shadow: 0 3px 0 var(--color-red);
+}
+
+.shadow-2 {
+    box-shadow: 0 3px 0 var(--color-red);
+}
+
+.line-red {
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-red);
+}
+
+.hover-effect-pill:hover {
+    background-color: var(--dark-grey);
+    color: #fff;
+}
+
+.purchase-bg {
+    background-image: url('../images/bg-6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.border-hover {
+    transition: .5s all;
+}
+
+.border-hover:hover {
+    border-left: 1px solid var(--color-red);
+    border-right: 1px solid var(--color-red);
+    border-bottom: 1px solid var(--color-red);
+}
+
+.border-top-red {
+    border-top: 2px solid var(--color-red);
+}
+
+.form-bg {
+    background-image: url('../images/form-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+
+.help-bg {
+    background-image: url('../images/help-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+
+.form-bg:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(107, 132, 149, .7);
+    z-index: -1;
+}
+
+.overlay-div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.place-white::placeholder {
+    color: #fff !important;
+}
+
+.hover-card-1 {
+    transition: .5s all;
+    color: var(--white);
+    border-bottom: 3px solid var(--color-red);
+    background-color: var(--light-grey) !important;
+}
+
+.hover-card-1:hover {
+    color: var(--color-red);
+    background-color: var(--white) !important;
+}
+
+
+/*new css azeem 26/7/2023*/
+
+.becom-pill .nav-link.active,
+.becom-pill .show>.nav-link {
+    background-color: var(--color-red);
+}
+
+.becom-pill .nav-link {
+    color: var(--color-red);
+}
+
+.doted-line {
+    display: block;
+    margin: 0 8px;
+    border-bottom: 1px dashed var(--color-red);
+    width: 100%;
+    height: 0;
+}
+
+.h-110 {
+    height: 110px !important;
+}
+
+.hover-a {
+    transition: .5s all;
+}
+
+.hover-a:hover {
+    background-color: var(--gray-color);
+}
+
+.additional-bg {
+    background-image: url('../images/help-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .w-100sm {
+        width: 100%;
+    }
+}
+
+.top-pill .nav-item {
+    padding: 0px 15px 0px;
+}
+
+.top-pill .nav-link {
+    border-bottom: 4px solid transparent;
+    color: var(--white);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.top-pill .nav-link.active,
+.top-pill .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: transparent;
+    border-bottom: 4px solid var(--red-light);
+}
+
+.bg-dark-gray-1 {
+    background-color: var(--gray-color);
+}
+
+.size-star img {
+    width: 158px;
+    height: 158px;
+}
+
+.a-hover {
+    transition: .5s all;
+}
+
+.a-hover:hover {
+    color: var(--red-light);
+    text-decoration: underline !important;
+}
+
+.bg-light-red {
+    background-color: var(--red-light);
+}
+
+.menu-mobile {
+    position: absolute;
+    top: 0px;
+    left: -200%;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+    transition: .5s all;
+    z-index: 111;
+}
+
+.menu-mobile.active {
+    left: 0px;
+}
+
+.w-20 {
+    width: 20px;
+}
+
+.menu-mobile ul li a {
+    padding: 12px 10px;
+    transition: .5s all;
+    color: #000;
+    border-bottom: 1px solid var(--color-red);
+}
+
+.menu-mobile ul li a:hover {
+    background-color: var(--color-red);
+    color: var(--white);
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    transition: .5s all;
+}
+
+@media (min-width: 1199px) {
+    .menu-mobile {
+        display: none;
+    }
+}
+
+
+/*new css azeem 31/7/2023*/
+
+.h-200 {
+    height: 200px;
+}
+
+
+/* --------styling-dilawar-here-01-8-2023-start-from-here--------- */
+
+.cate_card a:hover h4,
+.cate_card a:hover .card,
+.cate_card a:hover {
+    color: var(--color-red) !important;
+}
+
+@media(max-width:576px) {
+    .fliter_custom {
+        display: none !important;
+    }
+}
+
+@media(min-width:768px) {
+    .fliter_custom {
+        display: block;
+    }
+}
+
+.custom_input .form-control:focus {
+    border-color: rgb(250, 21, 21);
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #c70b0b;
+}
+
+.list-group-item.active {
+    background: var(--color-red);
+}
+
+.list-group-item.active a {
+    color: #fff !important;
+}
+
+.product_img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.product_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+
+/* --------styling-dilawar-here-01-8-2023-end-from-here--------- */
